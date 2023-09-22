@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Yüzde Hesaplayıcı</string>
+    <string name="numberAEditText_hint">A sayısını girin</string>
+    <string name="numberBEditText_hint">B sayısını girin</string>
+    <string name="clearButton">TEMİZLE</string>
+    <string name="PercentageBofNumberARadioButton1">A sayısının %B\'si kaçtır?</string>
+    <string name="percentageOfBRadioButton2">A sayısı, B sayısının yüzde kaçıdır?</string>
+    <string name="changeAtoBRadioButton3">A sayısından B sayısına değişim yüzdesi nedir?</string>
+    <string name="increaseByPercentBRadioButton4">A sayısı %B kadar artırılırsa kaç olur?</string>
+    <string name="decreaseAbyPercentBRadioButton5">A sayısı, %B kadar azaltılırsa kaç olur?</string>
+    <string name="a">A:</string>
+    <string name="b">B:</string>
+    <string name="percentage_result">%% %1$s</string>
+</resources>
