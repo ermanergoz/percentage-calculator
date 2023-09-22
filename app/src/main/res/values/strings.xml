@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Percentage Calculator</string>
+    <string name="find_percentage">Calculate percentage</string>
+    <string name="find_percentage_description">What is the percentage value of 160 out of 340</string>
+    <string name="find_percentage_of_value">Calculate % of a value</string>
+    <string name="find_percentage_of_value_description">What is 25% of 1400</string>
+    <string name="increase_value_by_percentage">Increase a value by %</string>
+    <string name="increase_value_by_percentage_description">Increase 1400 by 25%</string>
+    <string name="decrease_value_by_percentage">Decrease a value by %</string>
+    <string name="decrease_value_by_percentage_description">Decrease 1400 by 25%</string>
+    <string name="find_percentage_change">Calculate percentage change</string>
+    <string name="find_percentage_change_description">What is the percentage change from 31 to 690</string>
+    <string name="margin">Calculate margin</string>
+    <string name="margin_description">Selling price and profit using Margin calculator</string>
+    <string name="fraction_to_percentage">Convert fraction to percentage</string>
+    <string name="fraction_to_percentage_description">Convert any fraction like 4/3 to percentage like 133.3%</string>
+    <string name="tip_split">Tip and bill split calculator</string>
+    <string name="tip_split_description">Divide the bill of 900 in 4 people</string>
+    <string name="value">Value</string>
+    <string name="number_placeholder" translatable="false">0</string>
+    <string name="calculate">Calculate!</string>
+    <string name="error">Error:&#160;</string>
+    <string name="result">Result:&#160;</string>
+</resources>

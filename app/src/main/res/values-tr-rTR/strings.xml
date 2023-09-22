@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Yüzde Hesaplayıcı</string>
+    <string name="find_percentage">Yüzde hesapla</string>
+    <string name="find_percentage_description">340 üzerinden 160\'ın yüzde değeri kaçtır</string>
+    <string name="find_percentage_of_value">Bir değerin yüzdesini bul</string>
+    <string name="find_percentage_of_value_description">1400\'ün %25\'i nedir</string>
+    <string name="increase_value_by_percentage">Bir değeri % oranında artır</string>
+    <string name="increase_value_by_percentage_description">1400\'ü %25 artır</string>
+    <string name="decrease_value_by_percentage">Bir değeri % oranında azalt</string>
+    <string name="decrease_value_by_percentage_description">1400\'ü %25 azalt</string>
+    <string name="find_percentage_change">Yüzde değişimi hesapla</string>
+    <string name="find_percentage_change_description">31\'den 690\'a yüzde değişimi nedir</string>
+    <string name="margin">Marj hesabı</string>
+    <string name="margin_description">Marj hesaplayıcıyı kullanarak satış fiyatı ve kârı hesapla</string>
+    <string name="fraction_to_percentage">Kesiri yüzdeye çevir</string>
+    <string name="fraction_to_percentage_description">4/3 gibi herhangi bir kesri %133,3 gibi bir yüzdeye dönüştürün</string>
+    <string name="tip_split">Bahşiş ve hesap bölme hesaplayıcısı</string>
+    <string name="tip_split_description">900 tl\'lik hesabı, 4 kişiye paylaştır</string>
+    <string name="value">Değer</string>
+    <string name="calculate">Hesapla!</string>
+    <string name="error">Hata:&#160;</string>
+    <string name="result">Sonuç:&#160;</string>
+</resources>
