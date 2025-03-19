@@ -1,5 +1,6 @@
 package com.erman.percentagecalculator.presentation.screeens
 
+import android.content.ClipData
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -28,13 +29,13 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
-import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
-import androidx.compose.ui.platform.ClipboardManager
-import androidx.compose.ui.platform.LocalClipboardManager
+import androidx.compose.ui.platform.Clipboard
+import androidx.compose.ui.platform.LocalClipboard
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
+import androidx.compose.ui.platform.toClipEntry
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.text.AnnotatedString
@@ -43,6 +44,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.navigation.NavController
 import com.erman.percentagecalculator.BuildConfig
+import com.erman.percentagecalculator.CLIP_DATA_LABEL
 import com.erman.percentagecalculator.DECIMAL_FORMAT
 import com.erman.percentagecalculator.INPUT_VAL_INITIAL_STATE
 import com.erman.percentagecalculator.R
@@ -68,7 +70,7 @@ fun CalculatePercentageScreen(
     val state by viewModel.state.observeAsState(PercentageCalculatorViewModel.ViewState())
     val scaffoldState: ScaffoldState = rememberScaffoldState()
     val coroutineScope: CoroutineScope = rememberCoroutineScope()
-    val clipboardManager: ClipboardManager = LocalClipboardManager.current
+    val clipboardManager: Clipboard = LocalClipboard.current
 
     Scaffold(scaffoldState = scaffoldState, topBar = {
         AppBar(navController, getScreenTitle(operation))
@@ -103,7 +105,8 @@ fun CalculatePercentageScreen(
                         getResultWithUnit(DECIMAL_FORMAT.format(state.result), operation),
                         errorMessage = state.error
                     ) { result ->
-                        clipboardManager.setText(AnnotatedString(result))
+                        val clipData = ClipData.newPlainText(CLIP_DATA_LABEL, AnnotatedString(result))
+                        coroutineScope.launch{clipboardManager.setClipEntry(clipData.toClipEntry())}
                         coroutineScope.launch {
                             scaffoldState.snackbarHostState.showSnackbar(
                                 message = context.resources.getString(R.string.copied)
@@ -117,7 +120,6 @@ fun CalculatePercentageScreen(
     }
 }
 
-@OptIn(ExperimentalComposeUiApi::class)
 @Composable
 private fun InputSection(
     modifier: Modifier = Modifier,

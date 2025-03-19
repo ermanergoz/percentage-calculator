@@ -1,4 +1,3 @@
-@file:Suppress("TopLevelPropertyNaming")
 package com.erman.percentagecalculator
 
 const val MULTIPLE_DOT_PATTERN: String = "\\.{2,}"
@@ -15,3 +14,4 @@ const val RESULT_ERROR: Double = -1.0
 const val HOME_SCREEN_ROUTE: String = "home_screen"
 const val CALCULATION_SCREEN_ROUTE: String = "calculation_screen"
 const val PERCENTAGE_ENTIRETY: Int = 100
+const val CLIP_DATA_LABEL: String = "res"

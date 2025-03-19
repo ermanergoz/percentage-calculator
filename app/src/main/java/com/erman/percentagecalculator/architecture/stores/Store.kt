@@ -4,6 +4,7 @@ import androidx.lifecycle.MutableLiveData
 import com.erman.percentagecalculator.architecture.common.Dispatching
 import com.erman.percentagecalculator.architecture.middlewares.Middleware
 import com.erman.percentagecalculator.architecture.reducers.Reducing
+import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
