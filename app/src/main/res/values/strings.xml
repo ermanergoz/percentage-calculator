@@ -17,7 +17,6 @@
     <string name="calculate">Calculate!</string>
     <string name="error">Error:&#160;</string>
     <string name="result">Result:&#160;</string>
-    <string name="copied">Copied!</string>
     <string name="out_of">out of:</string>
     <string name="of">of:</string>
     <string name="by">by:</string>
@@ -26,7 +25,108 @@
     <string name="percent" translatable="false">%</string>
     <string name="back">Back</string>
     <string name="clear">Clear</string>
+    <string name="copy">Copy result</string>
+    <string name="copied">Copied: %1$s</string>
+    <string name="empty_result_hint">Enter values above to calculate</string>
+    <string name="enter_valid_numbers">Please enter valid numbers</string>
     <string name="home_ad_unit_id" translatable="false">ca-app-pub-5175314630478317/7008781032</string>
+    <string name="home_ad_unit_id_2" translatable="false">ca-app-pub-8605479558555922/1646884151</string>
     <string name="calculation_ad_unit_id" translatable="false">ca-app-pub-5175314630478317/3027543114</string>
-    <string name="test_ad_unit_id" translatable="false">"ca-app-pub-3940256099942544/6300978111"</string>
+    <string name="test_ad_unit_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="history">History</string>
+    <string name="clear_all">Clear all</string>
+    <string name="no_history">No calculations yet</string>
+    <string name="delete">Delete</string>
+    <string name="history_cleared">History cleared</string>
+    <!-- Discount -->
+    <string name="calculate_discount">Calculate discount</string>
+    <string name="discount_description">Find the final price after a discount</string>
+    <string name="discount_at">at discount:</string>
+
+    <!-- Markup -->
+    <string name="calculate_markup">Calculate markup</string>
+    <string name="markup_description">Find the selling price after markup</string>
+    <string name="markup_by">markup by:</string>
+
+    <!-- Tax -->
+    <string name="calculate_tax">Calculate tax</string>
+    <string name="tax_description">Find the total amount including tax</string>
+    <string name="tax_rate">tax rate:</string>
+
+    <!-- GPA -->
+    <string name="convert_gpa">Convert to GPA</string>
+    <string name="gpa_description">Convert a percentage to 4.0 scale GPA</string>
+    <string name="gpa_enter_percentage">Enter percentage</string>
+
+    <!-- Tip Calculator -->
+    <string name="tip_calculator">Tip calculator</string>
+    <string name="tip_calculator_description">Calculate tip and split the bill</string>
+    <string name="bill_amount">Bill amount</string>
+    <string name="tip_percentage">Tip %</string>
+    <string name="split_between">Split between</string>
+    <string name="tip_amount">Tip amount</string>
+    <string name="total_amount">Total</string>
+    <string name="per_person">Per person</string>
+
+    <!-- Compound Interest -->
+    <string name="compound_interest">Compound interest</string>
+    <string name="compound_interest_description">Calculate future value with compound interest</string>
+    <string name="principal">Principal</string>
+    <string name="annual_rate">Annual rate %</string>
+    <string name="time_in_years">Time (years)</string>
+    <string name="compounds_per_year">Compounds/year</string>
+    <string name="future_value">Future value</string>
+    <string name="total_interest">Total interest</string>
+
+    <!-- Shared -->
+    <string name="share">Share</string>
+    <string name="savings">You save:</string>
+    <string name="final_price">Final price:</string>
+    <string name="selling_price">Selling price:</string>
+    <string name="profit">Profit:</string>
+    <string name="tax_amount">Tax:</string>
+    <string name="total_with_tax">Total:</string>
+    <string name="batch_mode">Batch mode</string>
+    <string name="add_value">Add value</string>
+
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="sort_by_usage">Sort by usage</string>
+    <string name="sort_by_usage_description">Show most used operations first</string>
+    <string name="language">Language</string>
+    <string name="system_default">System default</string>
+
+    <!-- Theme -->
+    <string name="theme">Theme</string>
+    <string name="theme_system">System default</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+
+    <!-- About -->
+    <string name="about">About</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="rate_app">Rate app</string>
+    <string name="version">Version</string>
+    <string name="developer">Developer</string>
+    <string name="source_code">Source code</string>
+    <string name="developer_name" translatable="false">Erman Ergoz</string>
+    <string name="privacy_policy_url" translatable="false">https://ermanergoz.github.io/percentage-calculator-privacy-policy</string>
+    <string name="github_repo_url" translatable="false">https://github.com/ermanergoz/percentage-calculator</string>
+
+    <!-- Widget -->
+    <string name="widget_find_percent">Find %</string>
+    <string name="widget_percent_of">% of Value</string>
+    <string name="widget_discount">Discount</string>
+    <string name="widget_tax">Tax</string>
+    <string name="widget_tip">Tip</string>
+    <string name="widget_compound">Compound</string>
+    <string name="widget_increase">Increase</string>
+    <string name="widget_decrease">Decrease</string>
+    <string name="widget_change">Change</string>
+    <string name="widget_fraction">Fraction</string>
+    <string name="widget_markup">Markup</string>
+    <string name="widget_gpa">GPA</string>
+    <string name="widget_tap_to_calculate">Tap to calculate</string>
+    <string name="widget_select_operation">Select an operation</string>
+    <string name="widget_single_operation_description">Quick access to a single calculation</string>
 </resources>

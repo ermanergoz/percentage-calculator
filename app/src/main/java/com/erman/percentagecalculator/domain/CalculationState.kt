@@ -1,3 +1,9 @@
 package com.erman.percentagecalculator.domain
 
-data class CalculationState(val result: Double = 0.0, val error: String? = null)
+data class CalculationState(
+    val firstInput: String = "",
+    val secondInput: String = "",
+    val result: Double? = null,
+    val secondaryResult: Double? = null,
+    val error: String? = null,
+)
