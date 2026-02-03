@@ -1,17 +1,22 @@
 package com.erman.percentagecalculator
 
-const val MULTIPLE_DOT_PATTERN: String = "\\.{2,}"
-const val MULTIPLE_DOT_REPLACEMENT: String = "."
-const val CHAR_TO_BE_IGNORED: String = ","
-const val IGNORED_CHAR_REPLACEMENT: String = ""
-const val DECIMAL_FORMAT: String = "%.2f"
-const val INPUT_VAL_INITIAL_STATE: String = ""
 const val UNKNOWN_ERROR: String = "-"
-const val SEPARATOR: String = "/"
-const val NAV_ARGUMENT_PLACEHOLDER: String = "{operation}"
+const val INPUT_SEPARATOR: String = "||"
+const val RESULT_FORMAT: String = "%.2f"
+const val PREFS_NAME: String = "app_prefs"
+
 const val NAV_ARGUMENT_NAME: String = "operation"
-const val RESULT_ERROR: Double = -1.0
+const val NAV_ARGUMENT_INPUTS: String = "inputs"
 const val HOME_SCREEN_ROUTE: String = "home_screen"
-const val CALCULATION_SCREEN_ROUTE: String = "calculation_screen"
+const val HISTORY_SCREEN_ROUTE: String = "history_screen"
+
+const val LANGUAGE_PREF_KEY: String = "selected_language"
+
 const val PERCENTAGE_ENTIRETY: Int = 100
-const val CLIP_DATA_LABEL: String = "res"
+
+const val ERROR_INVALID_NUMBERS: String = "Please enter valid numbers"
+const val ERROR_UNDEFINED_RESULT: String = "Result is undefined"
+
+const val EXTRA_WIDGET_OPERATION: String = "extra_widget_operation"
+const val WIDGET_PREFS_NAME: String = "widget_prefs"
+const val WIDGET_OPERATION_KEY_PREFIX: String = "widget_operation_"

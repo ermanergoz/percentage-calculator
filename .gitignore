@@ -107,3 +107,22 @@ build
 *.ipr
 *~
 *.swp
+
+# AI tools
+.claude/
+.claude_memory/
+CLAUDE.md
+.claudeignore
+.cursor/
+.cursorrules
+.aider*
+.codeium/
+.continue/
+.copilot/
+.github/copilot/
+.agents/
+skills-lock.json
+.kiro/
+.opencode/
+.planning/
+.tasks/

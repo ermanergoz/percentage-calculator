@@ -1,0 +1,16 @@
+package com.erman.percentagecalculator.domain.model
+
+enum class Operation {
+    FIND_PERCENTAGE,
+    PERCENTAGE_OF_VALUE,
+    INCREASE_PERCENTAGE,
+    DECREASE_PERCENTAGE,
+    PERCENTAGE_CHANGE,
+    FRACTION_TO_PERCENTAGE,
+    DISCOUNT,
+    MARKUP,
+    TAX,
+    GPA_CONVERTER,
+    TIP_CALCULATOR,
+    COMPOUND_INTEREST,
+}
