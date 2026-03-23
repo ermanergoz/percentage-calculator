@@ -29,9 +29,9 @@
     <string name="copied">Copied: %1$s</string>
     <string name="empty_result_hint">Enter values above to calculate</string>
     <string name="enter_valid_numbers">Please enter valid numbers</string>
-    <string name="home_ad_unit_id" translatable="false">ca-app-pub-5175314630478317/7008781032</string>
+    <string name="home_ad_unit_id" translatable="false">ca-app-pub-8605479558555922/5266409430</string>
     <string name="home_ad_unit_id_2" translatable="false">ca-app-pub-8605479558555922/1646884151</string>
-    <string name="calculation_ad_unit_id" translatable="false">ca-app-pub-5175314630478317/3027543114</string>
+    <string name="calculation_ad_unit_id" translatable="false">ca-app-pub-8605479558555922/8091524531</string>
     <string name="test_ad_unit_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
     <string name="history">History</string>
     <string name="clear_all">Clear all</string>
