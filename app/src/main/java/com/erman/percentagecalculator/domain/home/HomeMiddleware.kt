@@ -14,16 +14,25 @@ class HomeMiddleware(
         event: HomeEvent,
     ): HomeEvent {
         if (event !is HomeEvent.LoadOperations) return event
-        val sortByUsage = preferencesRepository.isSortByUsageEnabled()
-        return HomeEvent.OperationsLoaded(
-            operations =
-                if (sortByUsage) {
-                    val usageCounts = historyRepository.getOperationUsageCounts()
-                    Operation.entries.sortedByDescending { usageCounts[it] ?: 0 }
-                } else {
-                    Operation.entries
-                },
-            sortByUsage = sortByUsage,
-        )
+        return try {
+            val sortByUsage = preferencesRepository.isSortByUsageEnabled()
+            HomeEvent.OperationsLoaded(
+                operations =
+                    if (sortByUsage) {
+                        val usageCounts = historyRepository.getOperationUsageCounts()
+                        Operation.entries.sortedByDescending { usageCounts[it] ?: 0 }
+                    } else {
+                        Operation.entries
+                    },
+                sortByUsage = sortByUsage,
+            )
+        } catch (
+            @Suppress("TooGenericExceptionCaught") _: Throwable,
+        ) {
+            HomeEvent.OperationsLoaded(
+                operations = Operation.entries,
+                sortByUsage = false,
+            )
+        }
     }
 }
