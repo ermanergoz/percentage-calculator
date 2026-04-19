@@ -6,44 +6,52 @@ import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
+import com.erman.percentagecalculator.domain.model.ThemeMode
 
-private val DarkColorPalette = darkColors(
-    primary = DarkBlue,
-    primaryVariant = DarkBlue,
-    secondary = LightBlue,
-    background = DarkerBlue,
-    surface = Color.Black
-)
+private val DarkColorPalette =
+    darkColors(
+        primary = DarkBlue,
+        primaryVariant = DarkBlue,
+        secondary = LightBlue,
+        background = DarkerBlue,
+        surface = DarkSurface,
+        error = ErrorRedDark,
+        onPrimary = Color.White,
+    )
 
-private val LightColorPalette = lightColors(
-    primary = DarkBlue,
-    primaryVariant = DarkBlue,
-    secondary = LightBlue,
-    background = LighterBlue,
-    surface = Color.White
-    /*
-    onPrimary = Color.White,
-    onSecondary = Color.Black,
-    onBackground = Color.Black,
-    onSurface = Color.Black,
-    */
-)
+private val LightColorPalette =
+    lightColors(
+        primary = DarkBlue,
+        primaryVariant = DarkBlue,
+        secondary = LightBlue,
+        background = LighterBlue,
+        surface = Color.White,
+        error = ErrorRed,
+    )
 
 @Composable
 fun PercentageCalculatorTheme(
-    darkTheme: Boolean = isSystemInDarkTheme(),
-    content: @Composable () -> Unit
+    themeMode: ThemeMode = ThemeMode.SYSTEM,
+    content: @Composable () -> Unit,
 ) {
-    val colors = if (darkTheme) {
-        DarkColorPalette
-    } else {
-        LightColorPalette
-    }
+    val darkTheme =
+        when (themeMode) {
+            ThemeMode.LIGHT -> false
+            ThemeMode.DARK -> true
+            ThemeMode.SYSTEM -> isSystemInDarkTheme()
+        }
+
+    val colors =
+        if (darkTheme) {
+            DarkColorPalette
+        } else {
+            LightColorPalette
+        }
 
     MaterialTheme(
         colors = colors,
         typography = Typography,
         shapes = Shapes,
-        content = content
+        content = content,
     )
 }
