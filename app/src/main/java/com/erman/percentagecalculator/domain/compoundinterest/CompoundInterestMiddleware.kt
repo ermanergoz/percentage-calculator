@@ -25,7 +25,7 @@ class CompoundInterestMiddleware(
             val rate = state.annualRate.toDouble()
             val time = state.timeInYears.toDouble()
             val compounds =
-                state.compoundsPerYear.toIntOrNull() ?: DEFAULT_COMPOUNDS_PER_YEAR
+                state.compoundsPerYear.toIntOrNull()?.takeIf { it > 0 } ?: DEFAULT_COMPOUNDS_PER_YEAR
             val result =
                 compoundInterestService.calculate(principal, rate, time, compounds)
             val hasInvalidResult =

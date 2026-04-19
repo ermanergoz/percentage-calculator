@@ -23,7 +23,7 @@ class TipCalculatorMiddleware(
         return try {
             val bill = state.billAmount.toDouble()
             val tipPct = state.tipPercentage.toDouble()
-            val split = state.splitCount.toIntOrNull() ?: DEFAULT_SPLIT_COUNT
+            val split = state.splitCount.toIntOrNull()?.takeIf { it > 0 } ?: DEFAULT_SPLIT_COUNT
             val result = tipCalculationService.calculate(bill, tipPct, split)
             val hasInvalidResult =
                 result.tipAmount.isInfinite() || result.tipAmount.isNaN() ||
