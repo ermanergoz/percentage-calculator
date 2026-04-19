@@ -214,7 +214,9 @@ private fun HistoryCard(
 }
 
 private fun formatResult(result: Double): String {
-    return if (result == result.toLong().toDouble()) {
+    return if (result in Long.MIN_VALUE.toDouble()..Long.MAX_VALUE.toDouble() &&
+        result == result.toLong().toDouble()
+    ) {
         result.toLong().toString()
     } else {
         RESULT_FORMAT.format(result)
