@@ -24,8 +24,9 @@ class HistoryProvider(
                 ),
             )
         } catch (
-            @Suppress("TooGenericExceptionCaught") _: Throwable,
+            @Suppress("TooGenericExceptionCaught") e: Throwable,
         ) {
+            android.util.Log.e("HistoryProvider", "Failed to write history", e)
         }
     }
 }
