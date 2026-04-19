@@ -36,9 +36,15 @@ class BatchMiddleware(
                     computeResult(operation, fixedValue, input)
                 }
             results.forEach { item ->
+                val inputs = when (operation) {
+                    Operation.PERCENTAGE_OF_VALUE,
+                    Operation.PERCENTAGE_CHANGE,
+                    -> listOf(state.fixedInput, item.input)
+                    else -> listOf(item.input, state.fixedInput)
+                }
                 historyService.write(
                     operation,
-                    listOf(item.input, state.fixedInput),
+                    inputs,
                     item.result,
                     item.secondaryResult,
                 )
