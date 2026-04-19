@@ -110,7 +110,7 @@
     <string name="developer">Developer</string>
     <string name="source_code">Source code</string>
     <string name="developer_name" translatable="false">Erman Ergoz</string>
-    <string name="privacy_policy_url" translatable="false">https://ermanergoz.github.io/percentage-calculator-privacy-policy</string>
+    <string name="privacy_policy_url" translatable="false">https://ermanergoz.github.io/policies/percentage-calculator-privacy-policy</string>
     <string name="github_repo_url" translatable="false">https://github.com/ermanergoz/percentage-calculator</string>
 
     <!-- Widget -->
